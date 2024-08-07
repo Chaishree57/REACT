@@ -1,12 +1,18 @@
-import React from "react";
-const Appcy = () =>
-{
+function compare(){
+    const name1="kabil";
+    const name2="kabil";
+    const obj1={name:"kabil"};
+    const obj2={name:"kabil"};
+    console.log(name1===name2);
+    console.log(name1===obj1);
+    console.log(obj1===obj2);
+}
+function App(){
     return(
-        <div>
-            <h1 style={{textAlign:"center"}}>Smile Component</h1>
-            <p style={{textAlign:"center"}}>It is a functional component</p>
-            <img src="https://media.istockphoto.com/id/1388186992/vector/yellow-happy-face-vector-symbol-icon.jpg?s=612x612&w=0&k=20&c=GZBWkt0ZLxLHkxU58BhRqkk41xC0LySjXa0N65xMDlw=" alt="Smiling face" ></img>
-        </div>
-    );
-};
-export default Appcy;
+        <div className="App">
+            <h1>"Let we see the output of JAVASCRIPT"</h1>
+              <button onClick={compare}>CY1</button>
+       </div>
+    )
+}
+export default App;
